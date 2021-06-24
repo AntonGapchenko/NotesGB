@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_switch">20sp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="margin_top_for_note_name">200dp</dimen>
+    <dimen name="margin_start_margin_end">5dp</dimen>
+    <dimen name="padding_start_for_edit_text">5dp</dimen>
+    <dimen name="padding_top_and_bottom_note_name_edit_text">10dp</dimen>
+    <dimen name="padding_top_description_edit_text">60dp</dimen>
+    <dimen name="margin_card_view">5dp</dimen>
+    <dimen name="radius">15dp</dimen>
+    <dimen name="padding_content">10dp</dimen>
+    <dimen name="text_view_text_size">26sp</dimen>
+    <dimen name="text_view_description_text_size">20sp</dimen>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Заметки</string>
+    <string name="save_btn">Сохранить</string>
+    <string name="note_description">Описание заметки</string>
+    <string name="note_name">Название заметки</string>
+    <string name="notes_list">Список дел</string>
+    <string name="add_note">Добавить заметку</string>
+    <string name="settings">Настройки</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_theme">Сменить тему</string>
+    <string name="create_note">Новая заметка</string>
+    <string name="edit_note">Редактирование заметки</string>
+    <string name="note"> Заметка\t</string>
+    <string name="delete">\tудалена</string>
+    <string name="cancel">Отмена</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edit_note_name"
+        style="@style/edit_text_note_name_style"
+        android:hint="@string/note_name" />
+
+    <EditText
+        android:id="@+id/edit_note_description"
+        style="@style/edit_text_note_description_style"
+        android:hint="@string/note_description" />
+
+    <Button
+        android:id="@+id/btn_note_save"
+        style="@style/btn_save_style"
+        android:text="@string/save_btn" />
+
+</LinearLayout>

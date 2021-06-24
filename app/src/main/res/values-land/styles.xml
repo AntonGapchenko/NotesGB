@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="edit_text_note_name_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_for_note_name</item>
+        <item name="android:layout_marginStart">@dimen/margin_start_margin_end</item>
+        <item name="android:layout_marginEnd">@dimen/margin_start_margin_end</item>
+        <item name="android:paddingTop">@dimen/padding_top_and_bottom_note_name_edit_text</item>
+        <item name="android:paddingBottom">@dimen/padding_top_and_bottom_note_name_edit_text</item>
+        <item name="android:paddingStart">@dimen/padding_start_for_edit_text</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/edit_text_style</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="edit_text_note_description_style" parent="edit_text_note_name_style">
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:paddingBottom">@dimen/padding_top_description_edit_text</item>
+        <item name="paddingStart">@dimen/padding_start_for_edit_text</item>
+        <item name="android:layout_marginStart">@dimen/margin_start_margin_end</item>
+        <item name="android:layout_marginEnd">@dimen/margin_start_margin_end</item>
+    </style>
+
+    <style name="btn_save_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:layout_marginStart">@dimen/margin_start_margin_end</item>
+        <item name="android:layout_marginEnd">@dimen/margin_start_margin_end</item>
+    </style>
+</resources>
