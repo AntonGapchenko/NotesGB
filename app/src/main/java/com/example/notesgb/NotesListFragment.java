@@ -1,10 +1,12 @@
 package com.example.notesgb;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -85,15 +87,17 @@ public class NotesListFragment extends Fragment {
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
             int position = viewHolder.getAdapterPosition();
             deletedNote = notes.get(position);
-            notes.remove(position);
-            adapter.notifyItemChanged(position);
-            adapter.notifyDataSetChanged();
-            Snackbar.make(recyclerView, getString(R.string.note) + deletedNote.getNoteName() + getString(R.string.delete), Snackbar.LENGTH_LONG)
-                    .setAction(R.string.cancel, v -> {
-                        notes.add(position, deletedNote);
+            new AlertDialog.Builder(getActivity()).
+                    setTitle(R.string.dialog_title).
+                    setMessage(R.string.dialog_main_text).setCancelable(false)
+                    .setPositiveButton(R.string.yes, (d, i) -> {
+                        notes.remove(position);
+                        adapter.notifyItemRemoved(position);
+                    })
+                    .setNegativeButton(R.string.no, (d, i) -> {
                         adapter.notifyItemChanged(position);
-
-                    }).show();
+                    })
+                    .show();
         }
     };
 
